@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NANU RENTALS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h2><a href="#"><i class="ion-plane"></i> NANU RENTALS</a></h2>
+        <nav>
+            <ul>
+                <li><a href="#" title="Bikes">Bikes</a></li>
+                <li><a href="#" title="Cars">Cars</a></li>
+                <li><a href="#" title="Cycles">Cycles</a></li>
+                <li><a href="#" title="Travellers">Travellers</a></li>
+                <li><a class="btn" href="#" title="Register / Log In">Register/Log In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="cover">
+        <h1>Discover what's out there.</h1>
+        <form class="flex-form">
+            <label for="from"><i class="ion-location"></i></label>
+            <input type="search" placeholder="Where do you want to go?">
+            <input type="submit" value="Search">
+        </form>
+        <div id="madeby">
+            <span>
+                <p>"Travel far enough, you meet yourself."</p>
+            </span>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Form Validation</h1>
+        <form id="form" onsubmit="validate()">
+            <div class="input-control">
+                <label for="fullname">Full Name:</label>
+                <input id="fullname" name="fullname" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="email">Email ID:</label>
+                <input id="email" name="email" type="email">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="phonenumber">Phone Number:</label>
+                <input id="phonenumber" name="phonenumber" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password">Password:</label>
+                <input id="password" name="password" type="password">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="confirmpassword">Confirm Password:</label>
+                <input id="confirmpassword" name="confirmpassword" type="password">
+                <div class="error"></div>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <!-- Defer loading of an external JavaScript file -->
+    <script defer src="form.js"></script>
+</body>
+</html>
